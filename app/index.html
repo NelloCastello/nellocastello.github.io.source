@@ -14,37 +14,47 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <div class="menu">
+        <button type="button" class="menu__close-btn" onclick="closeMenu()"><img src="images/icons/close.svg" alt="Закрыть"></button>
+            <section class="menu__section --selected" onclick="closeMenu()"><a href="#home">Главная</a></section>
+            <section class="menu__section" onclick="closeMenu()"><a href="#about_me">Обо мне</a></section>
+            <section class="menu__section" onclick="closeMenu()"><a href="#skills">Навыки</a></section>
+            <section class="menu__section" onclick="closeMenu()"><a href="#portfolio">Портфолио</a></section>
+            <section class="menu__section" onclick="closeMenu()"><a href="#contacts">Контакты</a></section>
+    </div>
+
     <nav class="nav">
         <div class="nav__container container">
-            <button class="nav__menu-btn"><img src="images/icons/menu.svg" alt="Меню"></button>
-            <div class="nav__lang-wrapper lang-wrapper">
+            <button type="button" class="nav__menu-btn" onclick="openMenu()"><img src="images/icons/menu.svg" alt="Меню"></button>
+            <div class="nav__lang-wrapper lang-wrapper" title="В разработке">
                 <a href="#" class="nav__lang --selected lang">RU</a>|<a href="#" class="nav__lang lang">ENG</a>
             </div>
             <section class="nav__sections">
-                <button class="nav__sections-close-btn"><img src="images/icons/close.svg" alt="Закрыть"></button>
-                <section class="nav__section --selected"><a href="#">Главная</a></section>
-                <section class="nav__section"><a href="#">Обо мне</a></section>
-                <section class="nav__section"><a href="#">Навыки</a></section>
-                <section class="nav__section"><a href="#">Портфолио</a></section>
-                <section class="nav__section"><a href="#">Контакты</a></section>
+                <section class="nav__section --selected"><a href="#home">Главная</a></section>
+                <section class="nav__section"><a href="#about_me">Обо мне</a></section>
+                <section class="nav__section"><a href="#skills">Навыки</a></section>
+                <section class="nav__section"><a href="#portfolio">Портфолио</a></section>
+                <section class="nav__section"><a href="#contacts">Контакты</a></section>
             </section>
         </div>
     </nav>
 
     <main class="content">
         <div class="content__container container">
-            <div class="content__home">
+            <div class="content__home" name="home">
+                <a name="home" class="scroll-to"></a>
                 <div class="content__home-selphy" style="background-image: url(images/selphy.jpg);"></div>
                 <h1 class="content__home-name">Дмитрий<br>Фарино</h1>
 
                 <p class="content__home-about">Front End Developer</p>
 
-                <div class="content__home-lang-wrapper lang-wrapper">
+                <div class="content__home-lang-wrapper lang-wrapper" title="В разработке">
                     <a href="#" class="content__home-lang lang --selected">RU</a>|<a href="#" class="content__home-lang lang">ENG</a>
                 </div>
             </div>
 
             <section class="content__section content__about_me">
+                <a name="about_me" class="scroll-to"></a>
                 <h1 class="content__section-title">Обо мне</h1>
                 <p class="content__section-description">
                     Front End разработчик из Беларуси.<br>
@@ -56,6 +66,7 @@
             </section>
 
             <section class="content__section">
+                <a name="skills" class="scroll-to"></a>
                 <h1 class="content__section-title">Навыки</h1>
                 <section class="content__subsection">
                     <h2 class="content__subsection-title">Работаю с языками:</h2>
@@ -148,6 +159,7 @@
             </section>
 
             <section class="content__section">
+                <a name="portfolio" class="scroll-to"></a>
                 <h1 class="content__section-title">Портфолио</h1>
                 <ul class="content__section-items">
                     <li class="content__section-item">
@@ -162,13 +174,14 @@
             </section>
 
             <section class="content__section content__contacts">
+                <a name="contacts" class="scroll-to"></a>
                 <h1 class="content__section-title content__contacts-title">Контакты</h1>
                 <ul class="content__section-items content__contacts-items">
                     <li class="content__contacts-item" style="background-image: url(images/logos/icons8-mail.svg);">
-                        <a href="/"></a>
+                        <a href="mailto:dfarino46@gmail.com" title="dfarino46@gmail.com"></a>
                     </li>
                     <li class="content__contacts-item" style="background-image: url(images/logos/icons8-telegram-app.svg);">
-                        <a href="/"></a>
+                        <a href="https://t.me/ncastello" title="@ncastello"></a>
                     </li>
                 </ul>
             </section>
@@ -187,4 +200,6 @@
             </div>
         </div>
     </footer>
+
+    <script src="scripts/main.js"></script>
 </body>
