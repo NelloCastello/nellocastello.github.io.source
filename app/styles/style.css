@@ -170,7 +170,6 @@ a {
 .content__subsection-item-img,
 .content__section-item-img {
     height: 100px;
-    background-color: #D9D9D9;
     background-size: contain;
     background-position: center;
     margin-bottom: 20px;
@@ -195,7 +194,8 @@ a {
     width: 67px;
     height: 76px;
     border-radius: 33.5px;
-    background-color: #D9D9D9;
+    background-size: contain;
+    background-position: center;
     margin-right: 60px;
 }
 .content__contacts-item:last-child { margin-right: 0; }
@@ -208,21 +208,34 @@ a {
 
 .footer {
     background-color: #090B10;
+}
+
+.footer__container {
     padding-top: 65px;
     padding-bottom: 65px;
+    display: flex;
+    justify-content: center;
 }
 
 .footer__copyright {
+    width: 331px;
     text-align: center;
-    font-size: 16px;
-    line-height: 18px;
-    color: #7C7878;
 }
 
-.footer__copyright-link {
+.footer__copyright-title {
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.footer__copyright-description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    color: #BFBFBF;
+}
+
+.footer__copyright-description-link {
     text-decoration: underline;
-}
-
-.footer__copyright-synatax_style {
-    color: #A9A9A9;
 }
