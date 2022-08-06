@@ -16,13 +16,18 @@
 <body>
     <nav class="nav">
         <div class="nav__container container">
-            <ul class="nav__sections">
-                <li class="nav__section --selected"><a href="#" class="nav__section">Главная</a></li>
-                <li class="nav__section"><a href="#" class="nav__section">Обо мне</a></li>
-                <li class="nav__section"><a href="#" class="nav__section">Навыки</a></li>
-                <li class="nav__section"><a href="#" class="nav__section">Портфолио</a></li>
-                <li class="nav__section"><a href="#" class="nav__section">Контакты</a></li>
-            </ul>
+            <button class="nav__menu-btn"><img src="images/icons/menu.svg" alt="Меню"></button>
+            <div class="nav__lang-wrapper lang-wrapper">
+                <a href="#" class="nav__lang --selected lang">RU</a>|<a href="#" class="nav__lang lang">ENG</a>
+            </div>
+            <section class="nav__sections">
+                <button class="nav__sections-close-btn"><img src="images/icons/close.svg" alt="Закрыть"></button>
+                <section class="nav__section --selected"><a href="#">Главная</a></section>
+                <section class="nav__section"><a href="#">Обо мне</a></section>
+                <section class="nav__section"><a href="#">Навыки</a></section>
+                <section class="nav__section"><a href="#">Портфолио</a></section>
+                <section class="nav__section"><a href="#">Контакты</a></section>
+            </section>
         </div>
     </nav>
 
@@ -34,8 +39,8 @@
 
                 <p class="content__home-about">Front End Developer</p>
 
-                <div class="content__home-lang-wrapper">
-                    <a href="#" class="content__home-lang --selected">RU</a>|<a href="#" class="content__home-lang">ENG</a>
+                <div class="content__home-lang-wrapper lang-wrapper">
+                    <a href="#" class="content__home-lang lang --selected">RU</a>|<a href="#" class="content__home-lang lang">ENG</a>
                 </div>
             </div>
 
@@ -156,9 +161,9 @@
                 </ul>
             </section>
 
-            <section class="content__section">
-                <h1 class="content__section-title">Контакты</h1>
-                <ul class="content__section-items">
+            <section class="content__section content__contacts">
+                <h1 class="content__section-title content__contacts-title">Контакты</h1>
+                <ul class="content__section-items content__contacts-items">
                     <li class="content__contacts-item" style="background-image: url(images/logos/icons8-mail.svg);">
                         <a href="/"></a>
                     </li>
