@@ -1,0 +1,228 @@
+html, body {
+    background-color: #0E1119;
+    color: #BFBFBF;
+    font-family: 'Akshar', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+.container {
+    max-width: 1224px;
+    margin: 0 auto;
+}
+
+
+.nav {
+    height: 100px;
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    border-bottom: 2px solid #BFBFBF;
+}
+
+.nav__sections {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__section {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+}
+.nav__section.--selected {
+    color: #FFFFFF;
+}
+
+
+.content__container {
+    padding-top: 40px;
+    padding-bottom: 150px;
+}
+
+.content__home {
+    display: flex;
+    margin-bottom: 150px;
+}
+
+.content__home-selphy {
+    width: 137px;
+    height: 137px;
+    border-radius: 68.5px;
+    background-color: #C4C4C4;
+    background-image: url(../images/selphy.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 13px;
+}
+
+.content__home-name {
+    position: sticky;
+    left: 0;
+    display: flex;
+    align-self: center;
+    font-size: 44px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.content__home-about {
+    position: sticky;
+    left: 50%;
+    transform: translateX(-50%);
+    align-self: end;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 19px;
+}
+
+.content__home-lang-wrapper {
+    position: sticky;
+    left: 100%;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 19px;
+}
+.content__home-lang.--selected {
+    color: #FFFFFF;
+}
+
+
+.content__section {
+    margin-bottom: 150px;
+}
+.content__section:last-child { margin-bottom: 0; }
+
+.content__section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 38px;
+}
+
+.content__section-description {
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+
+.content__section-items {
+    margin-top: 50px;
+}
+
+.content__subsection {
+    margin-bottom: 100px;
+}
+.content__subsection:last-child { margin-bottom: 0; }
+
+.content__subsection-title {
+    text-align: center;
+    color: #E3E3E3;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+
+.content__subsection-list {
+    list-style: square;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    margin-top: -20px;
+}
+
+.content__subsection-list-item {
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 18px;
+}
+.content__subsection-list-item:last-child { margin-bottom: 0; }
+
+.content__subsection-items,
+.content__section-items {
+    display: flex;
+    justify-content: center;
+}
+
+.content__subsection-item,
+.content__section-item {
+    width: 100px;
+    margin-right: 46px;
+}
+.content__subsection-item:last-child,
+.content__section-item:last-child
+{
+    margin-right: 0;
+}
+
+.content__subsection-item-img,
+.content__section-item-img {
+    height: 100px;
+    background-color: #D9D9D9;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.content__subsection-item-name,
+.content__section-item-name {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+
+.content__about_me {
+    max-width: 368px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content__contacts-item {
+    width: 67px;
+    height: 76px;
+    border-radius: 33.5px;
+    background-color: #D9D9D9;
+    margin-right: 60px;
+}
+.content__contacts-item:last-child { margin-right: 0; }
+
+.content__contacts-item a {
+    width: 100%;
+    height: 100%;
+}
+
+
+.footer {
+    background-color: #090B10;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.footer__copyright {
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+    color: #7C7878;
+}
+
+.footer__copyright-link {
+    text-decoration: underline;
+}
+
+.footer__copyright-synatax_style {
+    color: #A9A9A9;
+}
