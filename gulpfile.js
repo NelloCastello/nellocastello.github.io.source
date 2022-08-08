@@ -1,4 +1,4 @@
-let { src, dest, series } = require('gulp');
+let { src, dest, series, watch } = require('gulp');
 let tinypng = require('gulp-tinypng-compress');
 let svgo = require('gulp-svgo');
 let babel = require('gulp-babel');

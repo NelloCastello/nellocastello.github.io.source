@@ -22,16 +22,6 @@ a {
 }
 
 
-.lang-wrapper {
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 19px;
-}
-.lang.--selected {
-    color: #FFFFFF;
-}
-
-
 .menu {
     display: none;
     z-index: 2;
@@ -126,10 +116,6 @@ a {
     width: 33px;
 }
 
-.nav__lang-wrapper {
-    display: none;
-}
-
 .nav__sections {
     position: relative;
     flex: 1;
@@ -200,11 +186,6 @@ a {
     font-weight: 700;
     font-size: 17px;
     line-height: 19px;
-}
-
-.content__home-lang-wrapper {
-    position: sticky;
-    left: 100%;
 }
 
 
