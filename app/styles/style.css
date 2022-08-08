@@ -228,6 +228,7 @@ a {
     margin-bottom: 50px;
 }
 
+.content__section-list,
 .content__subsection-list {
     list-style-type: square;
     list-style-position: inside;
@@ -237,11 +238,13 @@ a {
     margin-top: -20px;
 }
 
+.content__section-list-item,
 .content__subsection-list-item {
     margin-bottom: 5px;
     font-size: 16px;
     line-height: 18px;
 }
+.content__section-list-item:last-child,
 .content__subsection-list-item:last-child { margin-bottom: 0; }
 
 .content__subsection-items,
